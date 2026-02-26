@@ -3,55 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Showcase</title>
     <style>
-        body {
-            background-color: #0f0f0f;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-        }
-        .video-button {
-            display: flex;
-            justify-content: center;
+        .video-warta-container {
             margin: 20px 0;
+            text-align: center;
         }
-        .video-button button {
-            background-color: #3b3b3b;
-            color: #ffffff;
+        .video-warta-card {
+            display: inline-block;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-warta-desc {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .video-warta-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
             border: none;
             border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none;
+            font-size: 16px;
         }
-        .video-button button:hover {
-            background-color: #555555;
-            transform: translateY(-2px);
+        .video-warta-btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
+        <h1>Showcase Header</h1>
+        <div class="video-warta-container">
+            <div class="video-warta-card">
+                <p class="video-warta-desc">Watch our latest video!</p>
+                <a href="https://youtu.be/xP43igW2KWo?si=LWxYjbcZlT2TUCfP" class="video-warta-btn">Watch Video</a>
+            </div>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Original Content</h2>
-            <p>This section restores the original structure of the content.</p>
-        </section>
-        <div class="video-button">
-            <button onclick="document.getElementById('videoModal').style.display='block'">Watch Video</button>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Your Website Name</p>
-    </footer>
-    <div id="videoModal" style="display:none;">
-        <div>
-            <span onclick="document.getElementById('videoModal').style.display='none'" style="cursor:pointer;">&times;</span>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="cards-container">
+        <!-- Existing cards go here -->
     </div>
 </body>
 </html>
