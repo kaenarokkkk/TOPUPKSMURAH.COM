@@ -343,7 +343,48 @@ Ku kituna, warta ieu ngan saukur nyayogikeun informasi langsung ka pamiarsa. htt
                     content.style.display = 'block';
                 }
             });
+            
         });
+
+      
     </script>
+     <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Button</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <div class="card">
+    <p class="label">Tonton Sekarang</p>
+
+    <a class="yt-btn" href="https://youtu.be/xP43igW2KWo?si=LWxYjbcZlT2TUCfP" target="_blank" rel="noopener noreferrer">
+      <span class="yt-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </span>
+      <span class="btn-text">Tonton di YouTube</span>
+    </a>
+
+    <p class="subtitle">Klik untuk membuka di tab baru</p>
+  </div>
+
+  <script>
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 22; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.setProperty('--x', Math.random() * 100 + 'vw');
+      p.style.setProperty('--dur', (6 + Math.random() * 10) + 's');
+      p.style.setProperty('--delay', (Math.random() * 12) + 's');
+      p.style.width = p.style.height = (Math.random() * 3 + 1.5) + 'px';
+      container.appendChild(p);
+    }
+  </script>
 </body>
                                                                    </html>
