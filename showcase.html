@@ -1,28 +1,57 @@
-<div class="video-button-card">
-    <h2>Tugas Video Warta</h2>
-    <a href="https://youtu.be/xP43igW2KWo?si=LWxYjbcZlT2TUCfP" class="btn btn-primary">Watch Video</a>
-</div>
-
-<style>
-.video-button-card {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-.btn:hover {
-    background-color: #0056b3;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .video-button {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .video-button button {
+            background-color: #3b3b3b;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .video-button button:hover {
+            background-color: #555555;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Website</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Original Content</h2>
+            <p>This section restores the original structure of the content.</p>
+        </section>
+        <div class="video-button">
+            <button onclick="document.getElementById('videoModal').style.display='block'">Watch Video</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Your Website Name</p>
+    </footer>
+    <div id="videoModal" style="display:none;">
+        <div>
+            <span onclick="document.getElementById('videoModal').style.display='none'" style="cursor:pointer;">&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
